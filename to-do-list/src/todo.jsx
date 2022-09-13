@@ -37,7 +37,7 @@ const Todo = () => {
                 createNewTodo(currentTodo);
             }
         }}
-        placeholder = 'what do you want to do today?' />
+        placeholder = 'what do you want to do now?' />
         
         {todos.map((todo, index) => 
             <div key={todo} className='todo'>
