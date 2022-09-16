@@ -14,11 +14,11 @@ const Todo = () => {
         setTodos(todosArray);
     }
 
-    // const completeTodo = (index) => {
-    //     const todosArray = [...todos];
-    //     todosArray[index].completed = !todosArray[index].completed;
-    //     setTodos(todosArray);
-    // }
+    const completeTodo = (index) => {
+        const todosArray = [...todos];
+        todosArray[index].completed = !todosArray[index].completed;
+        setTodos(todosArray);
+    }
 
     // const deleteTodo = (index) => {
     //     let todosArray = [...todos];
@@ -42,8 +42,8 @@ const Todo = () => {
         {todos.map((todo, index) => 
             <div key={todo} className='todo'>
                 <div className='checkbox' onClick={() => completeTodo(index)}>{todo.completed && <span>&#x2714;</span>}</div>
-                {/* <div className={todo.completed ? 'done' : ""}>{todo.todo}</div>
-                <div className="delete" onClick={() => deleteTodo(index)}>&#128465;</div> */}
+                <div className={todo.completed ? 'done' : ""}>{todo.todo}</div>
+                <div className="delete" onClick={() => deleteTodo(index)}>&#128465;</div>
                 
             </div>
         )}
