@@ -20,11 +20,11 @@ const Todo = () => {
         setTodos(todosArray);
     }
 
-    // const deleteTodo = (index) => {
-    //     let todosArray = [...todos];
-    //     todosArray.splice(index, 1);
-    //     setTodos(todosArray);
-    // }
+    const deleteTodo = (index) => {
+        let todosArray = [...todos];
+        todosArray.splice(index, 1);
+        setTodos(todosArray);
+         }
 
     return(
       <div>
